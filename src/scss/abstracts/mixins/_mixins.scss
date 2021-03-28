@@ -1,0 +1,101 @@
+@mixin size($w,$h:$w) {
+	width: $w;
+	height: $h;
+}
+
+//-----------mixins flex-----------//
+
+@mixin flex-a-j($alignItems,$justifyContent){
+	display: flex;
+	align-items: $alignItems;
+	justify-content: $justifyContent;
+}
+
+@mixin flex-a-j-d($alignItems,$justifyContent,$direction){
+	display: flex;
+	align-items: $alignItems;
+	justify-content: $justifyContent;
+	flex-direction:$direction;
+}
+
+//---------------------------------//
+
+@mixin center($position) {
+	position: absolute;
+	
+	@if $position == 'x' {
+	  top: 50%;
+	  -webkit-transform: translateY(-50%);
+	  -ms-transform: translateY(-50%);
+	  transform: translateY(-50%);
+	}
+	@else if $position == 'y' {
+	  left: 50%;
+	  -webkit-transform: translateX(-50%);
+	  -ms-transform: translateX(-50%);
+	  transform: translate(-50%);
+	}
+	@else if $position == 'xy' {
+	  top: 50%;
+	  left: 50%;
+	  -webkit-transform: translate(-50%, -50%);
+	  -ms-transform: translate(-50%, -50%);
+	  transform: translate(-50%, -50%);
+	}
+ }
+ 
+//--------------text----------------//
+
+@mixin blurText($value,$color) {
+	color: transparent;
+	text-shadow: 0 0 $value $color;
+}
+
+@mixin font($size:false,$lh:false,$weight:false,$colour:false) {
+	@if $size { font-size: $size; }
+	@if $lh { line-height: $lh; }
+	@if $weight { font-weight: $weight, }
+	@if $colour { color: $colour; }
+ }
+
+//----------------media------------------//
+ @mixin media($size) {
+	//settings-variable!!!
+	$xll: "#{$pointTarget}(#{$point}-width: #{$xll}px)";
+	$xl: "#{$pointTarget}(#{$point}-width: #{$xl}px)";
+	$lg: "#{$pointTarget}(#{$point}-width: #{$lg}px)";
+	$md: "#{$pointTarget}(#{$point}-width: #{$md}px)";
+	$sm: "#{$pointTarget}(#{$point}-width: #{$sm}px)";
+	@if $size == xll {
+	  @media #{$xll} {
+		@content;
+	  }
+	}
+
+	@else if $size == xl {
+	  @media #{$xl} {
+		@content;
+	  }
+	}
+
+	@else if $size == lg {
+	  @media #{$lg} {
+		@content;
+	  }
+	}
+
+	@else if $size == md {
+		@media #{$md} {
+			@content;
+		}
+	 }
+
+	 @else if $size == sm {
+		@media #{$sm} {
+			@content;
+		}
+	}
+ }
+
+
+

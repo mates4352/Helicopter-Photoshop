@@ -1,0 +1,57 @@
+%pos-rel {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+%pos-abs {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+%flexCenter{
+	display: flex;
+	justify-content: center;
+	align-items:center;
+}
+
+
+%container{
+	//settings variable!!!
+	$xll-1:'#{$xll}px' - 1px;
+	$xl-1:'#{$xl}px' - 1px;
+	$lg-1:'#{$lg}px' - 1px;
+	$md-1:'#{$md}px' - 1px;
+	$sm-1:'#{$sm}px' - 1px;
+
+	$ExtraExtraLarge: "#{$pointTarget}(#{$point}-width:#{$xll-1})";
+	$ExtraLarge: "#{$pointTarget}(#{$point}-width:#{$xl-1})";
+	$Large: "#{$pointTarget}(#{$point}-width:#{$lg-1})";
+	$Medium: "#{$pointTarget}(#{$point}-width:#{$md-1})";
+	$Small: "#{$pointTarget}(#{$point}-width:#{$sm-1})";
+
+	max-width:#{$pointMain}px;
+	padding:$pgMain;
+	margin: 0 auto;
+
+	@media  #{$ExtraExtraLarge} {
+		border: 1px solid #000;
+		padding:$pgXll;
+		max-width:#{$xl}px;
+	}
+	@media #{$ExtraLarge}{
+		padding:$pgXl;
+		max-width:#{$lg}px;
+	}
+	@media #{$Large}{
+		padding:$pgLg;
+		max-width:#{$md}px;
+	}
+	@media #{$Medium}{
+		padding:$pgMd;
+		max-width:#{$sm}px;
+	}
+}
+
+
