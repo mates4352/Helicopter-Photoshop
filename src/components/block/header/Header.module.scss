@@ -1,0 +1,45 @@
+@import "./../../../scss/abstracts/variable/variable";
+@import "./../../../scss/abstracts/elements/elements";
+@import './../../../scss/abstracts/mixins/mixins';
+
+.container{
+	@extend %container;
+}
+
+.wrapper{
+	@include flex-a-j(center,space-between);
+	height: 60px;
+}
+.cite{
+	@include font(14px,17px,false,$colorLink);
+	letter-spacing: 2px;
+}
+.inner{
+	display: flex;
+	align-items: center;
+}
+.phone{
+	display: flex;
+	align-items: center;
+	margin-left: 45px;
+}
+.phone span{
+	display: none;
+	@include font(14px,17px,false,$colorSpan);
+}
+.phoneLink{
+	display: none;
+}
+
+@include media(576){
+	.phone span{
+		display: flex;
+		margin-left:36px;
+	}
+	.cite{
+		display: none;
+	}
+	.phoneLink{
+		display: block;
+	}
+}

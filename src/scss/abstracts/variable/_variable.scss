@@ -1,34 +1,31 @@
 //--------project settings----------//
 //breakpoints-different
-$pointOne:none;
-$pointtwo:none;
-$pointfree:none;
 
 //breakpoints-main
-$pointMain:1600;
-$xll:1400;// 1400
-$xl:1200; // 1200
-$lg:992;  // 992
-$md:768;  // 768
-$sm:576;  // 576
+$BrPoint1:320;//$pgBrPoint1
+$BrPoint2:576;//$pgBrPoint2
+$BrPoint3:768;//$pgBrPoint3
+$BrPoint4:1280;//$pgBrPoint4
+$BrPoint5:1440;//$pgBrPoint5
+$BrPoint6:1920;//$pgBrPoint6
 //mobile first or desktop
-$point:'max';
+$point:'min';
+$number: 0px; //mobile == 0	desktop == -1
 //type media
 $pointTarget:'only screen and';
 
 //-----breakpoints padding-----//
-$pgMain:0 100px;
-$pgXll:0 50px;
-$pgXl:0 30px;
-$pgLg:0 30px;
-$pgMd:0 15px;
-$pgSm:0 5px;
+$pgBrPoint1:0 15px;//$BrPoint1
+$pgBrPoint2:0 35px;//$BrPoint2
+$pgBrPoint3:0 50px;//$BrPoint3
+$pgBrPoint4:0 70px;//$BrPoint4
+$pgBrPoint5:0 150px;//$BrPoint5
+$pgBrPoint6:0 390;//$BrPoint6
 
 //-----body settings-----//
 $font-family:"Montserrat";
 $font-weight:400;
 $min-width:320px;
-
 //------fonts-one------//
 //path
 $way-fonts: './../../assets/fonts/';
@@ -51,9 +48,11 @@ $ExtraBold:'Montserrat-ExtraBold';
 //--------------------------------------//
 
 //path img
-$way-img: '../assets/images';
+$way-img: './../../../assets/images';
 
 // color
-
+$colorLink:#5286EC;
+$colorSpan:#B3B3B3;
+$colorMain:#FC9B09;
 
 

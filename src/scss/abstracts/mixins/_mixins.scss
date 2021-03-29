@@ -61,37 +61,43 @@
 //----------------media------------------//
  @mixin media($size) {
 	//settings-variable!!!
-	$xll: "#{$pointTarget}(#{$point}-width: #{$xll}px)";
-	$xl: "#{$pointTarget}(#{$point}-width: #{$xl}px)";
-	$lg: "#{$pointTarget}(#{$point}-width: #{$lg}px)";
-	$md: "#{$pointTarget}(#{$point}-width: #{$md}px)";
-	$sm: "#{$pointTarget}(#{$point}-width: #{$sm}px)";
-	@if $size == xll {
-	  @media #{$xll} {
+	$Breakpoint1: "#{$pointTarget}(#{$point}-width: #{$BrPoint1}px)";
+	$Breakpoint2: "#{$pointTarget}(#{$point}-width: #{$BrPoint2}px)";
+	$Breakpoint3: "#{$pointTarget}(#{$point}-width: #{$BrPoint3}px)";
+	$Breakpoint4: "#{$pointTarget}(#{$point}-width: #{$BrPoint4}px)";
+	$Breakpoint5: "#{$pointTarget}(#{$point}-width: #{$BrPoint5}px)";
+	$Breakpoint6: "#{$pointTarget}(#{$point}-width: #{$BrPoint6}px)";
+	@if $size == $BrPoint1 {
+	  @media #{$Breakpoint1} {
 		@content;
 	  }
 	}
 
-	@else if $size == xl {
-	  @media #{$xl} {
+	@else if $size == $BrPoint2 {
+	  @media #{$Breakpoint2} {
 		@content;
 	  }
 	}
 
-	@else if $size == lg {
-	  @media #{$lg} {
+	@else if $size == $BrPoint3 {
+	  @media #{$Breakpoint3} {
 		@content;
 	  }
 	}
 
-	@else if $size == md {
-		@media #{$md} {
+	@else if $size == $BrPoint4 {
+		@media #{$Breakpoint4} {
 			@content;
 		}
 	 }
 
-	 @else if $size == sm {
-		@media #{$sm} {
+	 @else if $size == $BrPoint5 {
+		@media #{$Breakpoint5} {
+			@content;
+		}
+	}
+	@else if $size == $BrPoint6 {
+		@media #{$Breakpoint6} {
 			@content;
 		}
 	}

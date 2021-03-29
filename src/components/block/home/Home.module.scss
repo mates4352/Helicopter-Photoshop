@@ -1,0 +1,100 @@
+@import "./../../../scss/abstracts/variable/variable";
+@import "./../../../scss/abstracts/mixins/mixins";
+@import "./../../../scss/abstracts/elements/elements";
+.home{
+	background:url("#{$way-img}/home/img1.jpg") no-repeat -412px 0 /cover;
+	height: 655px;
+}
+
+.container{
+	@extend %container;
+	height: 100%;
+}
+
+.wrapper{
+	height: 100%;
+	@include flex-a-j-d(flex-start,center,column);
+}
+
+.text{
+	max-width: 240px;
+	@include font(35px,1,bold,#fff);
+	letter-spacing: 1.6px;
+	transform: translateY(-5px);
+}
+.text span{
+	color:$colorMain;
+	letter-spacing: 2.9px;
+}
+
+.blockPrice{
+	display: flex;
+	@include size(200px,77px);
+	padding: 8px 0 18px 0;
+	margin: 35px 0 26px 0;
+
+	@extend %pos-rel;
+
+	background:$colorMain;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+	transition:background 500ms ease;
+}
+
+.blockPrice:hover{
+	background:lighten($colorMain,10%);
+}
+
+.blockPrice::before{
+	content:'';
+	@include size(20px);
+
+	position:absolute;
+	bottom:-7px;
+	left:55%;
+	transform: rotate(45deg);
+
+	background-color:$colorMain;
+	transition:background 500ms ease;
+}
+
+.blockPrice:hover::before{
+	background:lighten($colorMain,10%);
+}
+
+.Price{
+	margin-left: 16px;
+}
+.Price span{
+	display: block;
+	transition: color 500ms ;
+}
+.Price span:nth-child(1){
+	@include font(18px,1.5,400,#fff);
+	letter-spacing: 2.4px;
+}
+.Price span:nth-child(2){
+	@include font(30px,1.2,800,#fff);
+	letter-spacing: 1.2px;
+}
+
+.blockPrice:hover .Price span{
+	color: #000;
+}
+
+.icon{
+	width: 70px;
+	height: 75px;
+}
+
+.button{
+	@include size(275px,70px);
+
+	@include font(16px,1.2,900,#fff);
+	letter-spacing: 2.2px;
+	text-align: center;
+
+	border: 3px solid #FFF;
+	background-color: transparent;
+	border-radius: 7px;
+}
