@@ -26,21 +26,12 @@
 	$BrPoint5_1px:'#{$BrPoint5}px' - $number ;
 	$BrPoint6_1px:'#{$BrPoint6}px' - $number ;
 
-	$Breakpoint1: "#{$pointTarget}(#{$point}-width:#{$BrPoint1_1px})";
-	$Breakpoint2: "#{$pointTarget}(#{$point}-width:#{$BrPoint2_1px})";
-	$Breakpoint3: "#{$pointTarget}(#{$point}-width:#{$BrPoint3_1px})";
-	$Breakpoint4: "#{$pointTarget}(#{$point}-width:#{$BrPoint4_1px})";
-	$Breakpoint5: "#{$pointTarget}(#{$point}-width:#{$BrPoint5_1px})";
-	$Breakpoint6: "#{$pointTarget}(#{$point}-width:#{$BrPoint6_1px})";
-
 	max-width:#{$BrPoint1}px;
 	padding:$pgBrPoint1;
 	margin: 0 auto;
 	
-	@media  #{$Breakpoint1} {
-		@if $BrPoint1 == false {}		
-		
-		@else if $BrPoint1 > $BrPoint2{
+	@media only screen and (#{$point}-width:#{$BrPoint1_1px}) {
+		@if $BrPoint1 > $BrPoint2{
 			$BrPoint1:$BrPoint2;
 			max-width:#{$BrPoint1}px;
 			padding:$pgBrPoint1;
@@ -53,9 +44,8 @@
 		}
 	}
 	
-	@media  #{$Breakpoint2} {
-		@if $BrPoint2 == false {}	
-		@else if $BrPoint2 > $BrPoint3 {
+	@media only screen and (#{$point}-width:#{$BrPoint2_1px}) {
+		@if $BrPoint2 > $BrPoint3 {
 			$BrPoint2:$BrPoint3;
 			max-width:#{$BrPoint2}px;
 		}
@@ -64,7 +54,7 @@
 			padding:$pgBrPoint2;
 		}
 	}
-	@media #{$Breakpoint3}{
+	@media only screen and (#{$point}-width:#{$BrPoint3_1px}){
 		@if $BrPoint2 > $BrPoint4 {
 			$BrPoint3:$BrPoint4;
 			max-width:#{$BrPoint3}px;
@@ -74,7 +64,7 @@
 			padding:$pgBrPoint3;
 		}
 	}
-	@media #{$Breakpoint4}{
+	@media only screen and (#{$point}-width:#{$BrPoint4_1px}){
 		@if $BrPoint4 > $BrPoint5 {
 			$BrPoint4:$BrPoint5;
 			max-width:#{$BrPoint4}px;
@@ -84,7 +74,7 @@
 			padding:$pgBrPoint4;
 		}
 	}
-	@media #{$Breakpoint5}{
+	@media only screen and (#{$point}-width:#{$BrPoint5_1px}){
 		@if $BrPoint5 > $BrPoint6 {
 			$BrPoint5:$BrPoint6;
 			max-width:#{$BrPoint5}px;
@@ -94,10 +84,9 @@
 			padding:$pgBrPoint5;
 		}
 	}
-	@media #{$Breakpoint6}{
+	@media only screen and (#{$point}-width:#{$BrPoint6_1px}){
 		padding:$pgBrPoint6;
 		max-width:#{$BrPoint6}px;
 	}
 }
-
 

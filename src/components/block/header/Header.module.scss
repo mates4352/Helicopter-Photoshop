@@ -10,14 +10,17 @@
 	@include flex-a-j(center,space-between);
 	height: 60px;
 }
+
 .cite{
 	@include font(14px,17px,false,$colorLink);
 	letter-spacing: 2px;
 }
+
 .inner{
 	display: flex;
 	align-items: center;
 }
+
 .phone{
 	display: flex;
 	align-items: center;
@@ -25,21 +28,33 @@
 }
 .phone span{
 	display: none;
-	@include font(14px,17px,false,$colorSpan);
+	@include font(18px,17px,false,$colorSpan);
 }
 .phoneLink{
 	display: none;
+	@include font(14px,17px,false,$color);
 }
 
-@include media(576){
+@include media(min,sm){
+	.phone{
+		display: flex;
+		margin-left: 38px;
+	}
 	.phone span{
 		display: flex;
-		margin-left:36px;
 	}
 	.cite{
 		display: none;
 	}
 	.phoneLink{
 		display: block;
+	}
+}
+@include media(min,md){
+	.wrapper{
+		height: 100px;
+	}
+	.logo{
+		@include size(130px,25px);
 	}
 }

@@ -12,10 +12,12 @@
 
 @font-face {
 	font-family: $font-family;
-	src:url('#{$way-fonts}#{$Regular}.woff2') format('woff2'), 
-		 url('#{$way-fonts}#{$Regular}.woff') format('woff');
 	font-weight: 400;
 	font-style: normal;
+	font-display: swap;
+	src:url('#{$way-fonts}#{$Regular}.woff2') format('woff2'), 
+		 url('#{$way-fonts}#{$Regular}.woff') format('woff');
+	
 }
 	
 @font-face {
@@ -24,6 +26,7 @@
 		  url('#{$way-fonts}#{$Medium}.woff') format('woff');
 	font-weight: 500;
 	font-style: normal;
+	font-display: swap;
 }
 
 
@@ -33,7 +36,7 @@
 		  url('#{$way-fonts}#{$SemiBold}.woff') format('woff');
 	font-weight: 600;
 	font-style: normal;
-
+	font-display: swap;
 }
 
 @font-face {
@@ -42,7 +45,7 @@
 		  url('#{$way-fonts}#{$Bold}.woff') format('woff');
 	font-weight: 700;
 	font-style: normal;
-
+	font-display: swap;
 }
 
 @font-face {
@@ -51,6 +54,7 @@
 		  url('#{$way-fonts}#{$ExtraBold}.woff') format('woff');
 	font-weight: 800;
 	font-style: normal;
+	font-display: swap;
 }
 
 

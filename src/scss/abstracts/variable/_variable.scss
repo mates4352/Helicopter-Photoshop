@@ -1,18 +1,17 @@
 //--------project settings----------//
-//breakpoints-different
-
-//breakpoints-main
+//breakpoints-element-%container
 $BrPoint1:320;//$pgBrPoint1
 $BrPoint2:576;//$pgBrPoint2
 $BrPoint3:768;//$pgBrPoint3
 $BrPoint4:1280;//$pgBrPoint4
 $BrPoint5:1440;//$pgBrPoint5
 $BrPoint6:1920;//$pgBrPoint6
+//breakpoints-@mixins-media
+$Breakpoints: (xs:320px, sm:576px, md:768px, xl:1280px,xll:1440px,xxl:1920px);
+
 //mobile first or desktop
 $point:'min';
-$number: 0px; //mobile == 0	desktop == -1
-//type media
-$pointTarget:'only screen and';
+$number: 0px; //mobile == 0 desktop == -0.2
 
 //-----breakpoints padding-----//
 $pgBrPoint1:0 15px;//$BrPoint1
@@ -20,18 +19,18 @@ $pgBrPoint2:0 35px;//$BrPoint2
 $pgBrPoint3:0 50px;//$BrPoint3
 $pgBrPoint4:0 70px;//$BrPoint4
 $pgBrPoint5:0 150px;//$BrPoint5
-$pgBrPoint6:0 390;//$BrPoint6
+$pgBrPoint6:0 390px;//$BrPoint6
 
 //-----body settings-----//
-$font-family:"Montserrat";
+$color:#37373F;
 $font-weight:400;
 $min-width:320px;
 //------fonts-one------//
 //path
 $way-fonts: './../../assets/fonts/';
 // name font
-$font-family:'Montserrat'; 
- //type path name 
+$font-family:'Montserrat';
+//type path name
 $Regular:'Montserrat-Regular';
 $Medium:'Montserrat-Medium';
 $SemiBold:'Montserrat-SemiBold';
@@ -46,7 +45,6 @@ $ExtraBold:'Montserrat-ExtraBold';
 // $ExtraBold_two:'Montserrat-ExtraBold';
 
 //--------------------------------------//
-
 //path img
 $way-img: './../../../assets/images';
 

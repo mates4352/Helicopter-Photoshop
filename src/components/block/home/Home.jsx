@@ -7,6 +7,7 @@ export const Home = ()=> {
 			<div className={s.container}>
 				<div className={s.wrapper}>
 					<p className={s.text}>Эксклюзивная <span> фотосессия </span> <br/> при полете на вертолете</p>
+
 					<div className={s.blockPrice}>
 						<div className={s.Price}>
 							<span>Стоимость:</span>
@@ -14,6 +15,7 @@ export const Home = ()=> {
 						</div>
 						<img className={s.icon} src={icon} alt="discount"/>
 					</div>
+
 					<button className={s.button}>Забронировать место</button>
 				</div>
 			</div>

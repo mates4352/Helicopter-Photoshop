@@ -59,49 +59,18 @@
  }
 
 //----------------media------------------//
- @mixin media($size) {
-	//settings-variable!!!
-	$Breakpoint1: "#{$pointTarget}(#{$point}-width: #{$BrPoint1}px)";
-	$Breakpoint2: "#{$pointTarget}(#{$point}-width: #{$BrPoint2}px)";
-	$Breakpoint3: "#{$pointTarget}(#{$point}-width: #{$BrPoint3}px)";
-	$Breakpoint4: "#{$pointTarget}(#{$point}-width: #{$BrPoint4}px)";
-	$Breakpoint5: "#{$pointTarget}(#{$point}-width: #{$BrPoint5}px)";
-	$Breakpoint6: "#{$pointTarget}(#{$point}-width: #{$BrPoint6}px)";
-	@if $size == $BrPoint1 {
-	  @media #{$Breakpoint1} {
-		@content;
-	  }
-	}
 
-	@else if $size == $BrPoint2 {
-	  @media #{$Breakpoint2} {
-		@content;
-	  }
-	}
-
-	@else if $size == $BrPoint3 {
-	  @media #{$Breakpoint3} {
-		@content;
-	  }
-	}
-
-	@else if $size == $BrPoint4 {
-		@media #{$Breakpoint4} {
-			@content;
+@mixin media($minmax, $media) {
+	@each $size, $resolution in $Breakpoints{
+		@if $media == $size {
+			@media only screen and (#{$minmax}-width: $resolution) {
+				@content;
+			}
 		}
-	 }
-
-	 @else if $size == $BrPoint5 {
-		@media #{$Breakpoint5} {
-			@content;
+		@else{
+			@media only screen and (#{$minmax}-width: $media) {
+				@content;
+			}
 		}
 	}
-	@else if $size == $BrPoint6 {
-		@media #{$Breakpoint6} {
-			@content;
-		}
-	}
- }
-
-
-
+}
