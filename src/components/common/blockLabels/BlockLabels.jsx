@@ -3,7 +3,7 @@ import s from "./BlockLabels.module.scss"
 
 export const BlockLabels = (props) => {
 	return (
-		<div className={s.grid}>
+		<>
 			{props.label0 &&
 				<Label
 					className={s.label}
@@ -46,7 +46,7 @@ export const BlockLabels = (props) => {
 					alt={props.label5.alt}
 					text={props.label5.text} />
 			}
-		</div>
+		</>
 	);
 }
 

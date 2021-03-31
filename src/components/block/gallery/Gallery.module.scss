@@ -17,4 +17,11 @@
 .text{
 	@include font(18px,1.2);
 	margin-bottom: 15px;
+	text-align: left;
+}
+
+@include media(min,md){
+	.title{
+		text-align: left;
+	}
 }

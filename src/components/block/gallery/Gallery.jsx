@@ -7,7 +7,7 @@ export const Gallery = () => {
 	return (
 		<section className={s.Gallery}>
 			<div className={s.container}>
-
+				<div className={s.grid}>
 					<h2 className={s.title}>Фотосессия в вертолете</h2>
 					<div className={s.description}>
 						<img src={img} alt='Gallery' className={s.img} />
@@ -21,9 +21,8 @@ export const Gallery = () => {
 						label4={data[4]}
 						label5={data[5]}
 					/>
-
 				</div>
-				
+			</div>
 		</section>
 	);
 }

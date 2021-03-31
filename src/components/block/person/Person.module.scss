@@ -1,0 +1,42 @@
+@import "./../../../scss/abstracts/mixins/mixins";
+@import "./../../../scss/abstracts/variable/variable";
+@import "./../../../scss/abstracts/elements/elements";
+.container{
+	@extend %container;
+}
+
+.content{
+	@include flex-a-j-d(center,center,column);
+	*:last-child{
+		margin-bottom: 25px;
+	}
+	position: relative;
+	text-align: center;
+}
+.content::before{
+content:'';
+	@include size(31px,27px);
+	position:absolute;
+	top:-20px;
+	right:0;
+	background:url("./../../../assets/images/person/like.svg") no-repeat center/cover;
+}
+
+.img{
+	margin: 0 auto 20px auto;
+}
+
+.name{
+	margin-bottom: 7px;
+	@include font(18px,1.2,500);
+	font-style: normal;
+}
+
+.nameWork{
+	margin-bottom: 7px;
+	@include font(14px,1.3);
+}
+
+.link{
+	@include font(14px,1.4,500,$colorLink);
+}
