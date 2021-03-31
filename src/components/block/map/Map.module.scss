@@ -13,11 +13,16 @@
 	object-position: -720px;
 }
 
+.img1{
+	@include size(67px);
+}
+
 .container{
 	@extend %container;
 	border: 1px solid #C7C7C7;
+	padding: 20px 0;
 }
 
 .wrapper{
-	@include flex-a-j-d(center,center,column);
+	@include flex-a-j-d(flex-start,center,row);
 }

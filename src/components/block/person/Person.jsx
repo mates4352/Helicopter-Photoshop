@@ -1,14 +1,18 @@
 import s from "./Person.module.scss"
 import { DescriptionPerson } from "../../common/descriptionPerson/DescriptionPerson"
-import { BlockPerson } from "../../common/blokPerson/BlockPerson"
-
+import { NavLink } from "react-router-dom";
+import img from "./../../../assets/images/person/img.png"
 export const Person = () => {
 	return (
 		<section className={s.Person}>
 			<div className={s.container}>
-				<BlockPerson
-					
-				/>
+				<div className={s.blokPerson} >
+						<img className={s.img} src={img} alt="person" />
+						<span className={s.like} ></span>
+						<cite className={s.name} >Марина Иванова</cite>
+						<span className={s.nameWork}>Фотограф</span>
+						<NavLink className={s.link}  to={"/"}>Показать больше информации о фотографе</NavLink>
+				</div>
 				<div className={s.wrapper}>
 					<DescriptionPerson
 						title='Об организаторе:'
