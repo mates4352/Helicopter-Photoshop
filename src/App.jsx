@@ -4,6 +4,7 @@ import { Header } from './components/block/header/Header';
 import { Home } from './components/block/home/Home';
 import { Person } from './components/block/person/Person';
 import { Photos } from './components/block/photos/Photos';
+import { Purchase } from './components/block/purchase/Purchase';
 
 function App() {
 	return (
@@ -12,7 +13,8 @@ function App() {
 			<Home />
 			<Gallery />
 			<Photos />
-			<Person/>
+			<Person />
+			<Purchase/>
 		</>
 	);
 }

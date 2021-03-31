@@ -1,0 +1,10 @@
+@import "./.../../../../../scss/abstracts/mixins/mixins";
+@import "./.../../../../../scss/abstracts/variable/variable";
+
+.button{
+	@include size(130px,50px);
+	@include font(14px,1.2,500,$colorMain);
+	border: 2px solid $colorMain;
+	border-radius: 3px;
+	background-color: transparent;
+}

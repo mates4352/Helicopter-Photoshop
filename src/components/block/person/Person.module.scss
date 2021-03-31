@@ -5,6 +5,12 @@
 	@extend %container;
 }
 
+.wrapper{
+	*:last-child{
+		margin-bottom: 0;
+	}
+}
+
 .content{
 	@include flex-a-j-d(center,center,column);
 	*:last-child{

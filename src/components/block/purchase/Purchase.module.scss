@@ -1,0 +1,31 @@
+@import "./../../../scss/abstracts/mixins/mixins";
+@import "./../../../scss/abstracts/variable/variable";
+@import "./../../../scss/abstracts/elements/elements";
+
+
+.Purchase{
+	margin: 40px 0 45px 0;
+}
+
+.container{
+	@extend %container;
+	
+}
+
+.title{
+	margin-bottom: 40px;
+	@include font(26px,1.2);
+	text-align: center;
+}
+
+.wrapper{
+	border: 1px solid #C7C7C7;
+}
+
+.time{
+	@include flex-a-j(center,center);
+	height: 60px;
+	@include font(18px,1.3);
+	text-align: center;
+	border-bottom: 1px solid #C7C7C7;
+}

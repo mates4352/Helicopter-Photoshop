@@ -2,6 +2,7 @@ import { Label } from "../label/Label";
 import s from "./BlockLabels.module.scss"
 
 export const BlockLabels = (props) => {
+	console.log(props);
 	return (
 		<>
 			{props.label0 &&
@@ -37,14 +38,17 @@ export const BlockLabels = (props) => {
 					className={s.label}
 					src={props.label4.src}
 					alt={props.label4.alt}
-					text={props.label4.text} />
+					text={props.label4.text}
+					rating={props.label4.rating}
+			/>
 			}
 			{props.label5 &&
 				<Label
 					className={s.label}
 					src={props.label5.src}
 					alt={props.label5.alt}
-					text={props.label5.text} />
+					text={props.label5.text}
+				/>
 			}
 		</>
 	);
