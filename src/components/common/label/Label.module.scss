@@ -24,3 +24,13 @@
 .wrapper{
 	max-width: 200px;
 }
+
+.rating{
+	margin-left: 10px;
+	vertical-align: text-bottom;
+}
+@include media(min,sm){
+	.wrapper{
+		max-width: none;
+	}
+}

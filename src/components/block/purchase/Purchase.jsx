@@ -28,6 +28,8 @@ export const Purchase = () => {
 					/>
 					<Label
 						style={style}
+						styleSpan={{ fontSize: '18px', }}
+						styleRating = {{marginLeft: '10px',}}
 						src={data[4].src}
 						alt={data[4].alt}
 						text={data[4].text}

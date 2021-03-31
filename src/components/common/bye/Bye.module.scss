@@ -26,3 +26,18 @@
 .strong{
 	font-weight: 600;
 }
+
+
+@include media(min,sm){
+	.list{
+		margin-bottom: 0;
+		*:last-child{
+			margin-bottom: 0;
+		}
+	}
+	
+	.wrapper{
+		@include flex-a-j(center,space-between);		
+		padding: 20px 20px;
+	}
+}

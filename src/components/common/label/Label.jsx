@@ -8,8 +8,8 @@ export const Label = (props) => {
 				{props.src && <img className={s.img} src={props.src} alt={props.alt} />}
 			</div>
 			<div className={s.wrapper}>
-				{props.text && <span className={s.caption}>{props.text}</span>}
-				{props.rating && <img className = {s.rating} src={props.rating} alt="rating"/>}
+				{props.text && <span style={props.styleSpan} className={s.caption}>{props.text}</span>}
+				{props.rating && <img className={s.rating} src={props.rating} alt="rating" style={props.styleRating}/>}
 			</div>
 		</div>
 	);

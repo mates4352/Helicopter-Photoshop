@@ -1,0 +1,26 @@
+.blockSlider{
+	padding: 52px 0 20px 0;
+}
+.blockSlider .swiper-container .swiper-wrapper{
+	margin: 0 auto;
+}
+
+.blockSlider .swiper-container .swiper-pagination .swiper-pagination-bullet{
+	background-color: #fc9b09;
+}
+
+.blockSlider .swiper-container .swiper-pagination {
+	position:absolute;
+	bottom:-10px;
+	left:0;
+}
+
+.blockSlider .swiper-container .swiper-button-prev{
+	--swiper-navigation-size:20px;
+	color: #d36e6e;
+}
+
+.blockSlider .swiper-container .swiper-button-next{
+	--swiper-navigation-size:20px;
+	color: #d36e6e;
+}

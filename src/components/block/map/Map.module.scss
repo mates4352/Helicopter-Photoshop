@@ -1,0 +1,23 @@
+@import "./../../../scss/abstracts/variable/variable";
+@import "./../../../scss/abstracts/mixins/mixins";
+@import "./../../../scss/abstracts/elements/elements";
+
+.map{
+	margin-bottom: 40px;
+}
+.img{
+	min-height: 425px;
+	margin-bottom: 50px;
+	@include size(100%);
+	object-fit: cover;
+	object-position: -720px;
+}
+
+.container{
+	@extend %container;
+	border: 1px solid #C7C7C7;
+}
+
+.wrapper{
+	@include flex-a-j-d(center,center,column);
+}
