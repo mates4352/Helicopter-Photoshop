@@ -11,6 +11,9 @@
 	@include size(100%);
 	object-fit: cover;
 	object-position: -720px;
+	@include media(min,sm){
+		object-position: center;
+	}
 }
 
 .img1{

@@ -1,0 +1,47 @@
+@import "./../../../scss/abstracts/variable/variable";
+@import "./../../../scss/abstracts/elements/elements";
+@import "./../../../scss/abstracts/mixins/mixins";
+
+.Comments{
+	margin-bottom: 50px;
+}
+
+.container{
+	@extend %container;
+}
+
+.wrapper{
+	display: none;
+}
+
+.title{
+	margin-bottom: 50px;
+	@include font(26px,1.5);
+	text-align: center;
+}
+
+@include media(min,sm){
+	.wrapper{
+		display: block;
+	}
+}
+.button{
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	@include font(19px,1.3,500,$colorLink);
+	margin: 0 auto;
+	background-color: #fff;
+}
+
+.button::before{
+	content:'';
+	@include size(6px,11px);
+
+	position:absolute;
+	top:58%;
+	right:-15px;
+	transform: translatey(-50%);
+	
+	background:url("./../../../assets/images/reviews/icon2.svg") no-repeat center/cover;
+}

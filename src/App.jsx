@@ -1,4 +1,5 @@
 import './App.scss';
+import { Comments } from './components/block/comments/Comments';
 import { Gallery } from './components/block/gallery/Gallery';
 import { Header } from './components/block/header/Header';
 import { Home } from './components/block/home/Home';
@@ -16,7 +17,8 @@ function App() {
 			<Photos />
 			<Person />
 			<Purchase />
-			<Map/>
+			<Map />
+			<Comments/>
 		</>
 	);
 }
