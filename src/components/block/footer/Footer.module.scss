@@ -1,0 +1,86 @@
+@import "./../../../scss/abstracts/variable/variable";
+@import "./../../../scss/abstracts/mixins/mixins";
+@import "./../../../scss/abstracts/elements/elements";
+
+.footer{
+	padding-bottom: 20px;
+}
+
+.container{
+	@extend %container;
+}
+
+.footerTop{
+	margin-bottom: 25px;
+	height: 40px;
+	@include flex-a-j(center,space-between);
+	border-bottom: 1px solid $colorSpan;
+}
+
+.logo{
+	width: 85px;
+	height: 15px;
+}
+
+.list{
+	display: flex;
+	align-items: center;
+}
+
+.item:not(:last-child){
+	margin-right: 30px;
+}
+
+.link{
+
+}
+
+.icon{
+
+}
+
+.footerBottom{
+	position: relative;
+	*:last-child{
+		margin-bottom: 0;
+	}
+}
+
+.iconsBottom{
+	margin-bottom: 24px;
+}
+
+.information{
+	*:last-child{
+		margin-bottom: 0;
+	}
+}
+
+.text{
+	display: block;
+	margin-bottom:7px;
+	@include font(17px,1.2,false,$colorSpan);
+	text-align: center;
+}
+
+.language{
+	@include font(15px,18px);
+	position:absolute;
+	top:50%;
+	right:0;
+	transform: translateY(-50%);
+}
+
+@include media(min,sm){
+	.footerTop{
+		border-bottom: none;
+	}
+	.footerBottom{
+		display: flex;
+		align-items: center;
+	}
+	
+	.iconsBottom{
+		margin: 0 40px 0 0;
+	}
+}
