@@ -15,7 +15,6 @@ export const SliderBlock = (props) => {
 	return (
 		<div className="blockSlider">
 			<Swiper
-				spaceBetween={0}
 				slidesPerView={1}
 				navigation
 				loop={true}

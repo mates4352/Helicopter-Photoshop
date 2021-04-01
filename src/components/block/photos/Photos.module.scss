@@ -9,6 +9,7 @@
 
 .container{
 	@extend %container;
+	text-align: center;
 }
 
 .title{
@@ -19,9 +20,35 @@
 .grid{
 	display: grid;
 	grid-template-columns:repeat(8,280px) ;
-	grid-template-rows: 185px;
+	grid-template-rows: 186px;
 	column-gap: 5px;
 	overflow-x: auto;
+}
+
+.link{
+	display: inline-block;
+	position: relative;
+	margin-top: 45px;
+	@include font(17px,1.2,500,$colorLink);
+}
+.link::after{
+	content:'';
+	@include size(11px,6px);
+	position:absolute;
+	top:60%;
+	left:-25px;
+	transform: translateY(-50%);
+	background:url('./../../../assets/images/photos/icon.png') no-repeat center/cover;
+}
+
+.link::before{
+	content:'';
+	@include size(11px,6px);
+	position:absolute;
+	top:60%;
+	right:-25px;
+	transform: translateY(-50%);
+	background:url('./../../../assets/images/photos/icon.png') no-repeat center/cover;
 }
 
 @include media(min,md){
@@ -30,4 +57,10 @@
 		justify-content: center;
 		gap: 8px;
 	}
+}
+@include media(min,xl){
+	.grid{
+		grid-template-columns:repeat(4,280px) ;
+	}
+
 }

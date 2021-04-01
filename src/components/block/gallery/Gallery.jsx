@@ -3,6 +3,7 @@ import img from './../../../assets/images/gallery/bg.jpg'
 import { data } from "./../../common/label/data"
 import { BlockLabels } from "../../common/blockLabels/BlockLabels"
 
+
 export const Gallery = () => {
 	return (
 		<section className={s.Gallery}>
@@ -21,6 +22,7 @@ export const Gallery = () => {
 						label4={data[4]}
 						label5={data[5]}
 					/>
+				
 				</div>
 			</div>
 		</section>

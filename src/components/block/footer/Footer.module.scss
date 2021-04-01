@@ -31,13 +31,6 @@
 	margin-right: 30px;
 }
 
-.link{
-
-}
-
-.icon{
-
-}
 
 .footerBottom{
 	position: relative;
@@ -66,12 +59,19 @@
 .language{
 	@include font(15px,18px);
 	position:absolute;
-	top:50%;
+	top:0;
 	right:0;
-	transform: translateY(-50%);
 }
 
+
+
 @include media(min,sm){
+	
+	.language{
+		top:50%;
+		transform: translateY(-50%);
+	}
+
 	.footerTop{
 		border-bottom: none;
 	}
@@ -82,5 +82,15 @@
 	
 	.iconsBottom{
 		margin: 0 40px 0 0;
+	}
+}
+@include media(min,md){
+	.iconsBottom{
+		margin: 0 108px 0 0;
+	}
+}
+@include media(min,xl){
+	.iconsBottom{
+		margin: 0 276px 0 0;
 	}
 }

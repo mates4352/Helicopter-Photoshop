@@ -1,6 +1,7 @@
 import s from "./Photos.module.scss"
 import { data } from "./../../common/image/data"
 import { Image } from "../../common/image/Image"
+import { NavLink } from "react-router-dom";
 
 export const Photos = () => {
 	return (
@@ -54,6 +55,7 @@ export const Photos = () => {
 							alt={data[8].src} />
 					}
 				</div>
+				<NavLink className={s.link} to={'/'}>Показать все фото</NavLink>
 			</div>
 		</section>
 	);

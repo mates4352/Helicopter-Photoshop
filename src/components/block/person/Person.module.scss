@@ -7,15 +7,15 @@
 }
 
 .blokPerson{
-	@include flex-a-j-d(center,center,column);
 	*:last-child{
-		margin-bottom: 25px;
+		margin-bottom: 0px;
 	}
-	position: relative;
+	margin-bottom: 25px;
 	text-align: center;
 }
-
-.img{
+.wrapperImg{
+	display: inline-block;
+	position: relative;
 	margin: 0 auto 20px auto;
 }
 
@@ -23,7 +23,7 @@
 	@include size(31px,27px);
 	position:absolute;
 	top:-20px;
-	right:0;
+	right:-85px;
 	background:url("./../../../assets/images/person/like.svg") no-repeat center/cover;
 }
 
@@ -42,4 +42,19 @@
 
 .link{
 	@include font(14px,1.4,500,$colorLink);
+}
+
+@include media(min,xl){
+	.wrapper{
+		display: flex;
+		flex-direction:row-reverse;
+	}
+	.column{
+		max-width: 520px;
+		margin-right: auto;
+	}
+	.blokPerson{
+		align-self: flex-start;
+		margin: 0 125px 25px 0;
+	}
 }

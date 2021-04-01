@@ -5,7 +5,7 @@ export const Avatar = (props) => {
 		<div className={s.wrapper}>
 			{props.name && <cite className={s.name} >{props.name}</cite>}
 			{props.nameWork && <span className={s.nameWork}>{props.nameWork}</span>}
-			{props.textLink && <NavLink className={s.link} to={"/"}>{props.textLink}</NavLink>}
+			{props.textLink && <NavLink className={s.link} style={props.styleLink} to={"/"}>{props.textLink}</NavLink>}
 			{props.reting && <img className={s.reting} src={props.reting}></img>}
 		</div>
 	);

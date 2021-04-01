@@ -2,30 +2,86 @@
 @import "./../../../scss/abstracts/mixins/mixins";
 @import "./../../../scss/abstracts/elements/elements";
 
-.map{
-	margin-bottom: 40px;
-}
-.img{
-	min-height: 425px;
+
+.mapImgWrapper{
 	margin-bottom: 50px;
+	height: 510px;
+	position: relative;
+}
+
+.mapImg{
 	@include size(100%);
 	object-fit: cover;
-	object-position: -720px;
+	object-position: -920px;
 	@include media(min,sm){
 		object-position: center;
 	}
 }
 
-.img1{
+.img{
 	@include size(67px);
+}
+
+.mapWrapper{
+	display: none;
 }
 
 .container{
 	@extend %container;
+}
+.wrapper{
+	max-width: 400px;
+	margin: 0 auto;
+	padding: 50px 0 20px 0;
 	border: 1px solid #C7C7C7;
-	padding: 20px 0;
+}
+.innerImg	{
+	margin: 0 30px 0 30px;
+	@include flex-a-j-d(flex-start,center,row);
 }
 
-.wrapper{
-	@include flex-a-j-d(flex-start,center,row);
+.innerImgStyle{
+	margin: 0px;
+	justify-content: flex-start;
+}
+
+@include media(min,xl){
+	.wrapper{
+		display: none;
+		visibility: visible;
+	}
+
+	.mapImgWrapper{
+		margin-bottom: 50px;
+		min-height: 510px;
+		position: relative;
+	}
+	
+	.mapWrapper{
+		display: block;
+		max-width: 400px;
+		margin: 0 auto;
+		padding: 45px 30px 45px 30px;
+		
+		position: absolute;
+		top: 20px;
+		left: 5%;
+	
+		background-color: #fff;
+	}
+}
+
+@include media(min,xll){
+	.mapWrapper{
+		position: absolute;
+		top: 20px;
+		left: 10%;
+	}
+}
+@include media(min,xxl){
+	.mapWrapper{
+		position: absolute;
+		top: 20px;
+		left: 20%;
+	}
 }
