@@ -19,7 +19,7 @@
 }
 .grid{
 	display: grid;
-	grid-template-columns:repeat(8,280px) ;
+	grid-template-columns:repeat(8,280px);
 	grid-template-rows: 186px;
 	column-gap: 5px;
 	overflow-x: auto;

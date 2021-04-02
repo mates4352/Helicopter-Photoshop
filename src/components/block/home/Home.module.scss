@@ -2,8 +2,9 @@
 @import "./../../../scss/abstracts/mixins/mixins";
 @import "./../../../scss/abstracts/elements/elements";
 .home{
-	background:url("#{$way-img}/home/img1.jpg") no-repeat -412px center /cover;
 	min-height: 655px;
+	margin-bottom: 75px;
+	background:url("#{$way-img}/home/img1.jpg") no-repeat -412px center /cover;
 }
 
 .container{
