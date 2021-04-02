@@ -7,4 +7,11 @@
 	border: 2px solid $colorMain;
 	border-radius: 3px;
 	background-color: transparent;
+	transition: color 500ms ease ,  background-color 500ms ease,text-shadow 500ms ease;
+}
+.button:hover{
+	background-color: $colorMain;
+	color: #fff;
+	text-shadow: 0 0 5px #fff;
+	box-shadow: 0 0 2px #000;
 }

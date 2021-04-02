@@ -3,7 +3,7 @@
 @import "./../../../scss/abstracts/elements/elements";
 .home{
 	min-height: 655px;
-	margin-bottom: 75px;
+	margin-bottom: 40px;
 	background:url("#{$way-img}/home/img1.jpg") no-repeat -412px center /cover;
 }
 
@@ -21,7 +21,7 @@
 }	
 
 .text{
-	max-width: 240px;
+	max-width: 245px;
 	@include font(35px,1,700,#fff);
 	letter-spacing: 1.6px;
 	margin-bottom: 35px;
@@ -93,11 +93,20 @@
 
 	@include font(16px,1.2,900,#fff);
 	letter-spacing: 2.2px;
+	text-shadow: 0 0 2px #000;
 	text-align: center;
 
 	border: 3px solid #FFF;
 	background-color:transparent;
 	border-radius: 7px;
+	transition: border 500ms ease, color 500ms ease , text-shadow 500ms ease;
+}
+
+
+
+.button:hover{
+	border: 1px solid $colorMain;
+	color:$colorMain;
 }
 
 @include media(min,sm){

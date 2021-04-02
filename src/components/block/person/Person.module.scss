@@ -16,14 +16,14 @@
 .wrapperImg{
 	display: inline-block;
 	position: relative;
-	margin: 0 auto 20px auto;
+	margin: 0 auto 26px auto;
 }
 
 .like{
 	@include size(31px,27px);
 	position:absolute;
-	top:-20px;
-	right:-85px;
+	top: -11px;
+	right: -76px;
 	background:url("./../../../assets/images/person/like.svg") no-repeat center/cover;
 }
 
@@ -41,6 +41,9 @@
 }
 
 .link{
+	display: block;
+	max-width: 175px;
+	margin: 0 auto;
 	@include font(14px,1.4,500,$colorLink);
 }
 

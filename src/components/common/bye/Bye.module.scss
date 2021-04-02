@@ -10,7 +10,7 @@
 }
 
 .list{
-	margin-bottom: 20px;
+	margin-bottom: 26px;
 	*:last-child{
 		margin-bottom: 0;
 	}
@@ -23,10 +23,10 @@
 .text{
 	@include font(18px,1.2);
 }
+
 .strong{
 	font-weight: 600;
 }
-
 
 @include media(min,sm){
 	.list{

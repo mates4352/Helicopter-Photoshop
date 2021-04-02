@@ -4,7 +4,7 @@
 
 
 .Photos{
-	margin: 60px 0;
+	margin: 40px 0 60px 0;
 }
 
 .container{
@@ -13,7 +13,8 @@
 }
 
 .title{
-	margin-bottom: 30px;
+	max-width: 230px;
+	margin: 0 auto 30px auto;
 	@include font(26px,32px);
 	text-align: center;
 }
@@ -26,11 +27,12 @@
 }
 
 .link{
-	display: inline-block;
+	display: none;
 	position: relative;
 	margin-top: 45px;
 	@include font(17px,1.2,500,$colorLink);
 }
+
 .link::after{
 	content:'';
 	@include size(11px,6px);
@@ -57,7 +59,11 @@
 		justify-content: center;
 		gap: 8px;
 	}
+	.link{
+		display: inline-block;
+	}
 }
+
 @include media(min,xl){
 	.grid{
 		grid-template-columns:repeat(4,280px) ;

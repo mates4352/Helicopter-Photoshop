@@ -7,7 +7,7 @@ export const Photos = () => {
 	return (
 		<section className={s.Photos}>
 			<div className={s.container}>
-				<div className={s.title}>Фотографии пакета</div>
+				<h2 className={s.title}>Фотографии пакета</h2>
 				<div className={s.grid}>
 					{data[0] &&
 						<Image

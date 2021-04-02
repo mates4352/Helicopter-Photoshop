@@ -1,7 +1,9 @@
 @import "./../../../scss/abstracts/variable/variable";
 @import "./../../../scss/abstracts/mixins/mixins";
 @import "./../../../scss/abstracts/elements/elements";
-
+.map{
+	margin-bottom: 35px;
+}
 
 .mapImgWrapper{
 	margin-bottom: 50px;
