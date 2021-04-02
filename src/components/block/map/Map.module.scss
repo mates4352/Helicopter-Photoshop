@@ -1,6 +1,7 @@
 @import "./../../../scss/abstracts/variable/variable";
 @import "./../../../scss/abstracts/mixins/mixins";
 @import "./../../../scss/abstracts/elements/elements";
+
 .map{
 	margin-bottom: 35px;
 }
@@ -31,12 +32,14 @@
 .container{
 	@extend %container;
 }
+
 .wrapper{
 	max-width: 400px;
 	margin: 0 auto;
 	padding: 50px 0 20px 0;
 	border: 1px solid #C7C7C7;
 }
+
 .innerImg	{
 	margin: 0 30px 0 30px;
 	@include flex-a-j-d(flex-start,center,row);

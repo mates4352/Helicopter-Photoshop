@@ -1,6 +1,7 @@
 @import "./../../../scss/abstracts/variable/variable";
 @import "./../../../scss/abstracts/mixins/mixins";
 @import "./../../../scss/abstracts/elements/elements";
+
 .home{
 	min-height: 655px;
 	margin-bottom: 40px;
@@ -26,6 +27,7 @@
 	letter-spacing: 1.6px;
 	margin-bottom: 35px;
 }
+
 .text span{
 	color:$colorMain;
 	letter-spacing: 2.9px;
@@ -71,14 +73,17 @@
 	display: block;
 	transition: color 500ms ;
 }
+
 .Price span:nth-child(1){
 	@include font(18px,1.5,false,#fff);
 	letter-spacing: 2.4px;
 }
+
 .Price span:nth-child(2){
 	@include font(30px,1.2,800,#fff);
 	letter-spacing: 1.2px;
 }
+
 .blockPrice:hover .Price span{
 	color: #000;
 }
@@ -102,8 +107,6 @@
 	transition: border 500ms ease, color 500ms ease , text-shadow 500ms ease;
 }
 
-
-
 .button:hover{
 	border: 1px solid $colorMain;
 	color:$colorMain;
@@ -123,25 +126,30 @@
 	.wrapper{
 		padding: 285px 0 260px 0;
 	}
+
 	.blockPrice{
 		display: flex;
 		@include size(225px,86px);
 		padding: 8px 0 18px 20px;
 		margin-bottom: 18px;
 	}
+
 	.Price span:nth-child(1){
 		@include font(19px,1.5,false,#fff);
 		letter-spacing: 2.6px;
 	}
+
 	.Price span:nth-child(2){
 		@include font(35px,1.2,800,#fff);
 		letter-spacing: 1.5px;
 	}
+
 	.icon{
 		width: 81px;
 		height: 85px;
 		transform: translate(-9px,-6px);
 	}
+
 	.home{
 		background:url("#{$way-img}/home/img1.jpg") no-repeat center center /cover;
 	}
@@ -151,9 +159,16 @@
 		max-width: none;
 		@include font(40px,1.2,700);
 	}
+	
 	.button{
 		@include size(305px,70px);
 		@include font(18px,1.2,900,#fff);
 	}
 
+}
+
+@include media(min,xll){
+	.home{
+		margin-bottom: 70px;
+	}
 }

@@ -1,6 +1,7 @@
 @import "./../../../scss/abstracts/variable/variable";
 @import "./../../../scss/abstracts/mixins/mixins";
 @import "./../../../scss/abstracts/elements/elements";
+
 .Comment{
 	margin-bottom: 30px;
 	padding-bottom: 40px;
@@ -44,7 +45,7 @@
 	position:absolute;
 	top:50%;
 	left:0;
-	@include center(x);
+	transform: translateX(-50%);
 
 	background:url("./../../../assets/images/reviews/icon.svg") no-repeat center/cover;
 }
@@ -53,15 +54,18 @@
 	.column{
 		@include flex-a-j-d(flex-end,flex-start,row);
 	}
+	
 	.wrapper{
 		margin-bottom: 0;
 		min-width: 245px;
 	}
+	
 	.date{
 		display: block;
 		width: calc(100% - 94px);
 		margin-left: auto
 	}
+	
 	.text{
 		width: calc(100% - 94px);
 		margin-left: auto

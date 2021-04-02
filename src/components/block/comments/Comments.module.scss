@@ -25,12 +25,12 @@
 		display: block;
 	}
 }
+
 .button{
 	display: block;
 	margin: 0 auto;
 	position: relative;
 	@include font(19px,1.3,500,$colorLink);
-	margin: 0 auto;
 	background-color: #fff;
 }
 

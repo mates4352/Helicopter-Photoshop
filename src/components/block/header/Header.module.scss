@@ -1,7 +1,6 @@
 @import "./../../../scss/abstracts/variable/variable";
 @import "./../../../scss/abstracts/elements/elements";
 @import './../../../scss/abstracts/mixins/mixins';
-
 .container{
 	@extend %container;
 }
@@ -13,7 +12,6 @@
 
 .cite{
 	@include font(14px,17px,false,$colorLink);
-	letter-spacing: 2px;
 }
 
 .inner{
@@ -26,10 +24,12 @@
 	align-items: center;
 	margin-left: 45px;
 }
+
 .phone span{
 	display: none;
 	@include font(18px,17px,false,$colorSpan);
 }
+
 .phoneLink{
 	display: none;
 	@include font(14px,17px,false,$color);
@@ -40,12 +40,15 @@
 		display: flex;
 		margin-left: 38px;
 	}
+
 	.phone span{
 		display: flex;
 	}
+
 	.cite{
 		display: none;
 	}
+
 	.phoneLink{
 		display: block;
 	}
@@ -54,6 +57,7 @@
 	.wrapper{
 		height: 100px;
 	}
+	
 	.logo{
 		@include size(130px,25px);
 	}
