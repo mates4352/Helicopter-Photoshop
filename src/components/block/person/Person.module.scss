@@ -48,7 +48,7 @@
 	@include font(14px,1.4,500,$colorLink);
 }
 
-@include media(min,xl){
+@include media(min,$xl){
 	.wrapper{
 		display: flex;
 		flex-direction:row-reverse;

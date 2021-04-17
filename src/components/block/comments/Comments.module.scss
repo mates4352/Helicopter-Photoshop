@@ -20,7 +20,7 @@
 	text-align: center;
 }
 
-@include media(min,sm){
+@include media(min,$sm){
 	.wrapper{
 		display: block;
 	}

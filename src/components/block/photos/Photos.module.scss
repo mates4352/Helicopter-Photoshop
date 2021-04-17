@@ -54,7 +54,7 @@
 	background:url('./../../../assets/images/photos/icon.png') no-repeat center/cover;
 }
 
-@include media(min,md){
+@include media(min,$md){
 	.grid{	
 		grid-template-columns:repeat(2,280px) ;
 		justify-content: center;
@@ -66,7 +66,7 @@
 	}
 }
 
-@include media(min,xl){
+@include media(min,$xl){
 	.grid{
 		grid-template-columns:repeat(4,280px) ;
 	}

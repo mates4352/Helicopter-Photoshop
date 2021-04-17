@@ -112,7 +112,7 @@
 	color:$colorMain;
 }
 
-@include media(min,sm){
+@include media(min,$sm){
 	.text{
 		margin-bottom: 33px;
 		line-height: 1.1;
@@ -122,7 +122,7 @@
 	}
 }
 
-@include media(min,md){
+@include media(min,$md){
 	.wrapper{
 		padding: 285px 0 260px 0;
 	}
@@ -167,7 +167,7 @@
 
 }
 
-@include media(min,xll){
+@include media(min,$xll){
 	.home{
 		margin-bottom: 70px;
 	}

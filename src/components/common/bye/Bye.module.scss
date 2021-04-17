@@ -28,7 +28,7 @@
 	font-weight: 600;
 }
 
-@include media(min,sm){
+@include media(min,$sm){
 	.list{
 		margin-bottom: 0;
 		*:last-child{

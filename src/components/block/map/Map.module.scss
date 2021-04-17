@@ -16,7 +16,7 @@
 	@include size(100%);
 	object-fit: cover;
 	object-position: -920px;
-	@include media(min,sm){
+	@include media(min,$sm){
 		object-position: center;
 	}
 }
@@ -50,7 +50,7 @@
 	justify-content: flex-start;
 }
 
-@include media(min,xl){
+@include media(min,$xl){
 	.wrapper{
 		display: none;
 		visibility: visible;
@@ -76,14 +76,14 @@
 	}
 }
 
-@include media(min,xll){
+@include media(min,$xll){
 	.mapWrapper{
 		position: absolute;
 		top: 20px;
 		left: 10%;
 	}
 }
-@include media(min,xxl){
+@include media(min,$xxl){
 	.mapWrapper{
 		position: absolute;
 		top: 20px;

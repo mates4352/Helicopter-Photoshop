@@ -31,14 +31,14 @@
 	border-bottom: 1px solid #C7C7C7;
 }
 
-@include media(min,md){
+@include media(min,$md){
 	.title{
 		font-size: 20px;
 		text-align: left;
 	}
 }
 
-@include media(min,xl){
+@include media(min,$xl){
 	.wrapper{
 		max-width: 770px;
 	}
@@ -46,7 +46,7 @@
 		font-size: 28px;
 	}
 }
-@include media(min,xll){
+@include media(min,$xll){
 	.title{
 		font-size: 20px;
 	}

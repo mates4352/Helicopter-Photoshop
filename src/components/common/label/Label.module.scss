@@ -29,7 +29,7 @@
 	margin-left: 10px;
 	vertical-align: text-bottom;
 }
-@include media(min,sm){
+@include media(min,$sm){
 	.wrapper{
 		max-width: none;
 	}

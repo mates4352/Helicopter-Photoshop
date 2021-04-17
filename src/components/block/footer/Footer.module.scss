@@ -65,7 +65,7 @@
 
 
 
-@include media(min,sm){
+@include media(min,$sm){
 	
 	.language{
 		top:50%;
@@ -84,12 +84,12 @@
 		margin: 0 40px 0 0;
 	}
 }
-@include media(min,md){
+@include media(min,$md){
 	.iconsBottom{
 		margin: 0 108px 0 0;
 	}
 }
-@include media(min,xl){
+@include media(min,$xl){
 	.iconsBottom{
 		margin: 0 276px 0 0;
 	}

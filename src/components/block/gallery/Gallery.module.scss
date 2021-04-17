@@ -19,7 +19,7 @@
 
 .img{
 	@include size(100%);
-	@include media(min,md){
+	@include media(min,$md){
 		@include size(100%,437px);
 	}
 }
@@ -30,19 +30,19 @@
 	text-align: left;
 }
 
-@include media(min,sm){
+@include media(min,$sm){
 	.text{
 		max-width: 430px;
 	}
 }
 
-@include media(min,md){
+@include media(min,$md){
 	.title{
 		font-size: 40px;
 	}
 }
 
-@include media(min,xl){
+@include media(min,$xl){
 	.grid{
 		grid-template-columns: 1fr 1fr ;
 	}

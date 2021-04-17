@@ -50,7 +50,7 @@
 	background:url("./../../../assets/images/reviews/icon.svg") no-repeat center/cover;
 }
 
-@include media(min,md){
+@include media(min,$md){
 	.column{
 		@include flex-a-j-d(flex-end,flex-start,row);
 	}
